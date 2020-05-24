@@ -1,0 +1,10 @@
+{
+    "name" : "",
+    "description": "",
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+     }
+}
