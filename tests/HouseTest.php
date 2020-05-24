@@ -3,7 +3,7 @@ require './vendor/autoload.php';
 
 
 use PHPUnit\Framework\TestCase;
-use Guzzle\Http\Client;
+use GuzzleHttp\Client;
 
 final class HouseTest extends TestCase
 {
@@ -14,7 +14,7 @@ final class HouseTest extends TestCase
   {
     $config = include 'config.php';
 
-    $client = new  GuzzleHttp\Client();
+    $client = new Client();
     $response = $client->get("https://www.potterapi.com/v1/houses?key={$config['api_key']}");
     $this->assertEquals('200', $response->getStatusCode());
   }
